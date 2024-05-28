@@ -62,7 +62,17 @@
         .main p,
         .main td,
         .main span {
-          font-size: 16px !important;
+          font-size: 14px !important;
+        }
+
+        .main.header span,
+        .main.header td,
+        .main.header p {
+          font-size: 14px !important;
+        }
+
+        h1 {
+          font-size: 36px !important;
         }
 
         .wrapper {
@@ -102,6 +112,13 @@
           font-size: 12px;
         }
 
+        .footer-btn-primary {
+          display: block !important;
+          text-align: center;
+          float: none !important;
+          font-size: 16px !important;
+        }
+
         .footer-btn-container {
           float: none !important;
         }
@@ -117,6 +134,22 @@
         .contact-info,
         .unsubscribe {
           display: block !important;
+        }
+
+        .main .unsubscribe {
+          margin-top: 12px !important;
+        }
+
+        .main .unsubscribe a,
+        .main .unsubscribe p {
+          font-size: 8px !important;
+        }
+
+        .main .separator span {
+          font-size: 10px !important;
+        }
+        .main .separator {
+          padding-top: 20px !important;
         }
       }
       @media all {
@@ -180,16 +213,6 @@
       width="100%"
     >
       <tr>
-        <!-- <td
-          style="
-            font-family: Helvetica, sans-serif;
-            font-size: 16px;
-            vertical-align: top;
-          "
-          valign="top"
-        >
-          &nbsp;
-        </td> -->
         <td
           class="container"
           style="
@@ -214,26 +237,10 @@
               margin: 0 auto;
               max-width: 600px;
               padding: 0;
+              border: 1px solid #000000;
+              border-radius: 16px;
             "
           >
-            <!-- START CENTERED WHITE CONTAINER -->
-            <span
-              class="preheader"
-              style="
-                color: transparent;
-                display: none;
-                height: 0;
-                max-height: 0;
-                max-width: 0;
-                opacity: 0;
-                overflow: hidden;
-                mso-hide: all;
-                visibility: hidden;
-                width: 0;
-              "
-              >This is preheader text. Some clients will show this text as a
-              preview.</span
-            >
             <!-- HEADER START -->
             <table
               role="presentation"
@@ -245,7 +252,6 @@
                 border-collapse: separate;
                 mso-table-lspace: 0pt;
                 mso-table-rspace: 0pt;
-                border-top: 1px solid #eaebed;
                 border-top-left-radius: 16px;
                 border-top-right-radius: 16px;
                 width: 100%;
@@ -257,7 +263,6 @@
             >
               <tr>
                 <td
-                  class="wrapper"
                   style="
                     font-family: Helvetica, sans-serif;
                     font-size: 16px;
@@ -274,24 +279,30 @@
               </tr>
               <tr>
                 <td
-                  class="wrapper"
                   style="
                     font-family: Helvetica, sans-serif;
-                    font-size: 16px;
                     vertical-align: top;
                     box-sizing: border-box;
                   "
                   valign="top"
                   aria-invalid=""
                 >
-                  <h1>YOU'RE IN!</h1>
+                  <h1
+                    style="font-size: 64px; margin-top: 6px; margin-bottom: 0"
+                  >
+                    YOU'RE IN!
+                  </h1>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <p style="margin: 0">CONFIRM YOUR EMAIL ADDRESS</p>
                 </td>
               </tr>
             </table>
             <!-- HEADER END -->
 
-            <!-- CONTENT START -->
+            <!-- BODY CONTENT START -->
             <table
               role="presentation"
               border="0"
@@ -302,16 +313,15 @@
                 border-collapse: separate;
                 mso-table-lspace: 0pt;
                 mso-table-rspace: 0pt;
-                background: #ffffff;
                 width: 100%;
-                padding: 36px 16px;
-                padding-bottom: 0;
+                padding: 20px 16px;
                 color: #000000;
+                background-color: #ffffff;
               "
               width="100%"
             >
               <tr>
-                <td>
+                <td style="font-size: 16px">
                   <p>You’re a real OG&#174; for this.</p>
                   <p>We are more than happy you’ve joined us!</p>
                   <p>
@@ -369,140 +379,89 @@
                 </td>
               </tr>
             </table>
-            <!-- CONTENT END -->
+            <!-- BODY CONTENT END -->
 
-            <!-- START FOOTER -->
-            <div
-              class="footer"
+            <!-- FOOTER START -->
+            <table
+              role="presentation"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="main"
               style="
-                clear: both;
-                text-align: center;
+                border-collapse: separate;
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
                 width: 100%;
+                padding: 20px 16px;
+                color: #ffffff;
                 background-color: #000000;
                 border-bottom-left-radius: 16px;
                 border-bottom-right-radius: 16px;
               "
+              width="100%"
+              background-color="#000000"
             >
-              <table
-                role="presentation"
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                style="
-                  border-collapse: separate;
-                  mso-table-lspace: 0pt;
-                  mso-table-rspace: 0pt;
-                  width: 100%;
-                "
-                width="100%"
-              >
-                <tr>
-                  <td class="wrapper" style="padding: 12px">
-                    <div
-                      style="display: inline-block; float: left"
-                      class="footer-btn-container"
-                    >
-                      <a href="https://www.facebook.com/" class="footer-btn"
-                        >CLUTCH</a
-                      >
-                      <a href="https://www.instagram.com/" class="footer-btn"
-                        >LINKEDIN</a
-                      >
-                      <a href="https://www.linkedin.com/" class="footer-btn"
-                        >TWITTER</a
-                      >
-                      <a href="https://twitter.com/" class="footer-btn"
-                        >SPOTIFY</a
-                      >
-                    </div>
-                    <div
-                      style="display: inline-block; float: right"
-                      class="footer-btn-container"
-                    >
-                      <a
-                        href="https://twitter.com/"
-                        class="footer-btn footer-btn-primary"
-                        style="
-                          background-color: #45dea7;
-                          margin-right: 0;
-                          color: #000000;
-                          border-color: transparent;
-                        "
-                        >Let's talk</a
-                      >
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="wrapper"
-                    style="
-                      font-family: Helvetica, sans-serif;
-                      vertical-align: top;
-                      padding-left: 12px;
-                      padding-top: 40px;
-                      padding-bottom: 12px;
-                    "
-                    valign="top"
-                    align="left"
+              <tr>
+                <td>
+                  <a href="https://www.facebook.com/" class="footer-btn"
+                    >CLUTCH</a
                   >
-                    <span
-                      href="#"
-                      class="apple-link"
-                      style="color: #9a9ea6; font-size: 10px; text-align: start"
-                      >Extras</span
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="wrapper"
-                    style="
-                      font-family: Helvetica, sans-serif;
-                      vertical-align: top;
-                      padding-left: 12px;
-                      padding-bottom: 6px;
-                    "
-                    valign="top"
-                    align="left"
+                  <a href="https://www.instagram.com/" class="footer-btn"
+                    >LINKEDIN</a
                   >
-                    <span>
-                      <a
-                        href="#"
-                        class="apple-link footer-link"
-                        style="
-                          color: #ffffff;
-                          font-size: 18px;
-                          text-align: start;
-                          text-decoration: none;
-                          display: inline;
-                        "
-                        >Claim your free Google/Meta/TikTok Ads audit ↗
-                      </a>
-                      <small
-                        style="
-                          font-size: 10px;
-                          color: #45dea7;
-                          vertical-align: middle;
-                          margin-left: 8px;
-                        "
-                        >(JOIN WAITLIST)</small
-                      >
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="wrapper"
-                    style="
-                      font-family: Helvetica, sans-serif;
-                      vertical-align: top;
-                      padding-left: 12px;
-                      padding-bottom: 6px;
-                    "
-                    valign="top"
-                    align="left"
+                  <a href="https://www.linkedin.com/" class="footer-btn"
+                    >TWITTER</a
                   >
+                  <a href="https://twitter.com/" class="footer-btn">SPOTIFY</a>
+
+                  <a
+                    href="https://twitter.com/"
+                    class="footer-btn footer-btn-primary"
+                    style="
+                      background-color: #45dea7;
+                      border-color: transparent;
+                      color: #000000;
+                      margin-right: 0;
+                      float: right;
+                      font-size: 18px;
+                      padding: 5px 12px;
+                    "
+                    >Let's talk</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="wrapper separator"
+                  style="
+                    font-family: Helvetica, sans-serif;
+                    vertical-align: top;
+                    padding-top: 40px;
+                    padding-bottom: 12px;
+                  "
+                  valign="top"
+                  align="left"
+                >
+                  <span
+                    class="apple-link"
+                    style="color: #9a9ea6; font-size: 10px; text-align: start"
+                    >EXTRAS</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="wrapper"
+                  style="
+                    font-family: Helvetica, sans-serif;
+                    vertical-align: top;
+                    padding-bottom: 6px;
+                  "
+                  valign="top"
+                  align="left"
+                >
+                  <span>
                     <a
                       href="#"
                       class="apple-link footer-link"
@@ -511,57 +470,101 @@
                         font-size: 18px;
                         text-align: start;
                         text-decoration: none;
+                        display: inline;
                       "
-                      >Read our clients’ reviews ↗
+                      >Claim your free Google/Meta/TikTok Ads
+                      audit&nbsp;↗&#xFE0E;
                     </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="wrapper"
-                    style="
-                      font-family: Helvetica, sans-serif;
-                      vertical-align: top;
-                      padding-left: 12px;
-                    "
-                    valign="top"
-                    align="left"
-                  >
-                    <a
-                      href="#"
-                      class="apple-link footer-link"
+                    <small
                       style="
-                        color: #ffffff;
-                        font-size: 18px;
-                        text-align: start;
-                        text-decoration: none;
+                        font-size: 10px;
+                        color: #45dea7;
+                        vertical-align: middle;
+                        margin-left: 8px;
                       "
-                      >Jump into our website ↗
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="wrapper"
-                    style="
-                      font-family: Helvetica, sans-serif;
-                      vertical-align: top;
-                      padding-left: 12px;
-                      padding-top: 40px;
-                      padding-bottom: 12px;
-                    "
-                    valign="top"
-                    align="left"
-                  >
-                    <span
-                      href="#"
-                      class="apple-link"
-                      style="color: #9a9ea6; font-size: 10px; text-align: start"
-                      >CONTACT US</span
+                      >(JOIN WAITLIST)</small
                     >
-                  </td>
-                </tr>
-                <tr>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="wrapper"
+                  style="
+                    font-family: Helvetica, sans-serif;
+                    vertical-align: top;
+                    padding-bottom: 6px;
+                  "
+                  valign="top"
+                  align="left"
+                >
+                  <a
+                    href="#"
+                    class="apple-link footer-link"
+                    style="
+                      color: #ffffff;
+                      font-size: 18px;
+                      text-align: start;
+                      text-decoration: none;
+                    "
+                    >Read our clients’ reviews&nbsp;↗&#xFE0E;
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="wrapper"
+                  style="
+                    font-family: Helvetica, sans-serif;
+                    vertical-align: top;
+                  "
+                  valign="top"
+                  align="left"
+                >
+                  <a
+                    href="#"
+                    class="apple-link footer-link"
+                    style="
+                      color: #ffffff;
+                      font-size: 18px;
+                      text-align: start;
+                      text-decoration: none;
+                    "
+                    >Jump into our website&nbsp;↗&#xFE0E;
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="wrapper separator"
+                  style="
+                    font-family: Helvetica, sans-serif;
+                    vertical-align: top;
+                    padding-top: 40px;
+                    padding-bottom: 12px;
+                  "
+                  valign="top"
+                  align="left"
+                >
+                  <span
+                    class="apple-link"
+                    style="color: #9a9ea6; font-size: 10px; text-align: start"
+                    >CONTACT US</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="wrapper"
+                  style="
+                    font-family: Helvetica, sans-serif;
+                    vertical-align: top;
+                    padding-top: 40px;
+                    padding-bottom: 12px;
+                  "
+                  valign="top"
+                  align="middle"
+                >
                   <table
                     class="footer-table"
                     role="presentation"
@@ -576,7 +579,6 @@
                         style="
                           color: #ffffff;
                           text-align: start;
-                          padding-left: 12px;
                           padding-bottom: 12px;
                         "
                       >
@@ -610,8 +612,7 @@
                         style="
                           color: #ffffff;
                           text-align: end;
-                          font-size: 10px;
-                          padding-right: 12px;
+                          font-size: 8px;
                           padding-bottom: 12px;
                         "
                       >
@@ -627,74 +628,12 @@
                       </td>
                     </tr>
                   </table>
-                </tr>
-                <!-- <tr>
-                  <td
-                    class="wrapper"
-                    style="
-                      font-family: Helvetica, sans-serif;
-                      vertical-align: top;
-                      padding-left: 12px;
-                      padding-bottom: 6px;
-                    "
-                    valign="top"
-                    align="left"
-                  >
-                    <a
-                      href="tel:+48504364394"
-                      class="apple-link footer-link"
-                      style="
-                        color: #ffffff;
-                        font-size: 14px;
-                        text-align: start;
-                        text-decoration: none;
-                      "
-                      >(+48) 504364394
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="wrapper"
-                    style="
-                      font-family: Helvetica, sans-serif;
-                      vertical-align: top;
-                      padding-left: 12px;
-                    "
-                    valign="top"
-                    align="left"
-                  >
-                    <a
-                      href="mailto:office@ogstudio.co"
-                      class="apple-link footer-link"
-                      style="
-                        color: #ffffff;
-                        font-size: 14px;
-                        text-align: start;
-                        text-decoration: none;
-                      "
-                      >OFFICE@OGSTUDIO.CO
-                    </a>
-                  </td>
-                </tr> -->
-              </table>
-            </div>
-
-            <!-- END FOOTER -->
-
-            <!-- END CENTERED WHITE CONTAINER -->
+                </td>
+              </tr>
+            </table>
+            <!-- FOOTER END -->
           </div>
         </td>
-        <!-- <td
-          style="
-            font-family: Helvetica, sans-serif;
-            font-size: 16px;
-            vertical-align: top;
-          "
-          valign="top"
-        >
-          &nbsp;
-        </td> -->
       </tr>
     </table>
   </body>
